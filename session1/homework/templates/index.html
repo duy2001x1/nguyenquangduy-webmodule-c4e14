@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Gaming Account Rent</title>
+  </head>
+  <body>
+    <h1> THE MOST RELIABLE ACCOUNT RENTING SERVICE </h1>
+
+    <!-- {% for item in items %}
+      <p><i> Game: </i> <b> {{ item.game }}</b> </p>
+      <p><i> Rank: </i> <b> {{ item.rank }}</b> </p>
+      <p><i> Price: </i> <b> {{ item.price }}</b> </p>
+      <p><i> Status: </i> <b> {{ item.status }}</b> </p>
+    {% endfor %} -->
+
+    <table style="height: 261px; width: 446px;">
+<tbody>
+  {% for item in items %}
+<tr style="height: 122.667px;">
+<td style="width: 115.333px; text-align: center; height: 122.667px;"><em>Game</em></td>
+<td style="width: 315.333px; text-align: center; height: 122.667px;"><strong>{{ item.game }}<img src="/dataweb/{{item.game_pic}}" width="200" height="93" /></strong></td>
+</tr>
+<tr style="height: 58px;">
+<td style="width: 115.333px; text-align: center; height: 58px;"><em>Rank&nbsp;</em></td>
+<td style="width: 315.333px; text-align: center; height: 58px;"><strong>{{ item.rank }}</strong></td>
+</tr>
+<tr style="height: 58px;">
+<td style="width: 115.333px; text-align: center; height: 58px;"><em>Price</em></td>
+<td style="width: 315.333px; text-align: center; height: 58px;"><strong>{{ item.price }}</strong></td>
+</tr>
+<tr style="height: 58px;">
+<td style="width: 115.333px; text-align: center; height: 58px;"><em>Status</em></td>
+<td style="width: 315.333px; text-align: center; height: 58px;"><strong>{{ item.status }}</strong></td>
+</tr>
+  {% endfor %}
+</tbody>
+</table>
+
+  </body>
+</html>
