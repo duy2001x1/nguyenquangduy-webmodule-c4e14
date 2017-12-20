@@ -1,0 +1,2 @@
+- There are no duplicate ids on the records.
+- Because they act as the identification of the data and each has 1 specific one

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Mùa đông không lạnh</title>
+  </head>
+  <body>
+    {% for service in all_services %}
+
+    {% if service.gender == 0 %}
+      <img src="../static/images/female_profile.jpg" alt="" width="300" height="300">
+    {% else %}
+      <img src="../static/images/male_profile.jpg" alt="" width="300" height="300">
+    {% endif %}
+
+    <p> {{ service.name }} </p>
+    <p> {{ service.yob }} </p>
+    <p> {{ service.height }} </p>
+
+    {% endfor %}
+  </body>
+</html>
