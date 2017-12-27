@@ -13,6 +13,7 @@
         <th>Giới tính</th>
         <th>Chiều cao</th>
         <th>Trạng thái</th>
+        <th>ID</th>
       </thead>
 
       <tbody>
@@ -39,8 +40,10 @@
           {% endif %}
           </td>
 
+          <td>{{ service.id }}</td>
+
           <td>
-          <a href="#">Sửa</a>
+          <a href="{{ url_for('edit', service_id = service.id) }}">Sửa</a>
           <a href="{{ url_for('delete', service_id = service.id) }}">Xóa</a>
           </td>
 

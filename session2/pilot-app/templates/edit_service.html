@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Edit Service</title>
+  </head>
+  <body>
+    <form class="" method="post">
+      <label for="">Tên</label>
+      <input type="text" name="name" value="{{ service.name }}">
+
+      <br>
+
+      <label for="">Số điện thoại</label>
+      <input type="text" name="phone" value="{{ service.phone }}">
+
+      <br>
+
+      <label for="">Năm sinh</label>
+      <input type="number" name="yob" value="{{ service.yob }}">
+
+      <br>
+
+      <label for="">Giới tính</label>
+      {% if service.gender == 0 %}
+      <input type="radio" name="gender" value="0" checked>Nữ
+      <input type="radio" name="gender" value="1">Nam
+      {% else %}
+      <input type="radio" name="gender" value="0">Nữ
+      <input type="radio" name="gender" value="1" checked>Nam
+      {% endif %}
+
+      <br>
+
+      <label for="">Chiều cao</label>
+      <input type="number" name="height" value="{{ service.height }}">cm
+
+      <br>
+
+      <label for="">Tình trạng</label>
+      <select name="occupied">
+      {% if service.occupied %}
+        <option value="True">Đang bận</option>
+        <option value="False">Đang rảnh</option>
+      {% else %}
+        <option value="False">Đang bận</option>
+        <option value="True">Đang rảnh</option>
+      {% endif %}
+      </select>
+
+      <br>
+
+      <input type="submit" value="Sửa">
+      <a href="../admin"><button type="button" name="button">Quay lại</button></a>
+    </form>
+
+    {% for message in get_flashed_messages() %}
+    <p>{{ message }}</p>
+    {% endfor %}
+
+  </body>
+</html>

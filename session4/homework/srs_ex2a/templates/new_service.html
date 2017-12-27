@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>New Service</title>
+  </head>
+  <body>
+    <form class="" method="post">
+      <label for="">Account</label>
+      <input type="text" name="account" value="">
+
+      <br>
+
+      <label for="">Password</label>
+      <input type="number" name="password" value="">
+
+      <br>
+
+      <label for="">Game</label>
+      <input type="radio" name="game" value="lol">League of Legends
+      <input type="radio" name="game" value="csgo">Counter Strike: Global Offensive
+      <input type="radio" name="game" value="pubg">Playerunknown's Battlegrounds
+
+      <br>
+
+      <label for="">Price</label>
+      <input type="radio" name="price" value="1000/h">1000/h
+      <input type="radio" name="price" value="1500/h">1500/h
+      <input type="radio" name="price" value="2000/h">2000/h
+
+      <br>
+
+      <label for="">Contact</label>
+      <input type="number" name="contact" value="">
+
+      <br>
+
+      <input type="submit" value="Đăng Kí">
+    </form>
+
+    {% for message in get_flashed_messages() %}
+    <p>{{ message }}</p>
+    {% endfor %}
+
+  </body>
+</html>

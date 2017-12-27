@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>New Service</title>
+  </head>
+  <body>
+    <form class="" method="post">
+      <label for="">Tên</label>
+      <input type="text" name="name" value="">
+
+      <br>
+
+      <label for="">Số điện thoại</label>
+      <input type="text" name="phone" value="">
+
+      <br>
+
+      <label for="">Năm sinh</label>
+      <input type="number" name="yob" value="">
+
+      <br>
+
+      <label for="">Giới tính</label>
+      <input type="radio" name="gender" value="0">Nữ
+      <input type="radio" name="gender" value="1">Nam
+
+      <br>
+
+      <label for="">Chiều cao</label>
+      <input type="number" name="height" value="">cm
+
+      <br>
+
+      <input type="submit" value="Đăng Kí">
+    </form>
+
+    {% for message in get_flashed_messages() %}
+    <p>{{ message }}</p>
+    {% endfor %}
+
+  </body>
+</html>

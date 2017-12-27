@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Account Renting Service</title>
+  </head>
+  <body>
+    {% for service in all_services %}
+
+    {% if service.game == "lol" %}
+      <img src="../static/lol.jpg" alt="">
+    {% elif service.game == "csgo" %}
+      <img src="../static/csgo.jpg" alt="">
+    {% else %}
+      <img src="../static/pubg.jpg" alt="">
+    {% endif %}
+
+    <p> {{ service.account }} </p>
+    <p> {{ service.price }} </p>
+
+    {% endfor %}
+
+  </body>
+</html>
