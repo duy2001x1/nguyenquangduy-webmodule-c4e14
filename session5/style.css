@@ -1,0 +1,168 @@
+/* h1 {
+  color: red;
+} */
+
+#first-heading {
+  color: blue;
+}
+
+.text-gray {
+  color: gray;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-underline {
+  text-decoration: none; /* overline, linethrough */
+}
+
+.no-underline {
+  text-decoration: none;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.font-berkshire {
+  font-family: 'Berkshire Swash', cursive;
+}
+
+.font-italic {
+  font-style: italic; /* oblique */
+}
+
+.font-bold {
+  font-weight: bold; /* 100 - 900, bolder */
+}
+
+.font-size-40px {
+  font-size: 40px;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.h-500px {
+  height: 1000px;
+}
+
+.bg-gray {
+  background-color: gray;
+}
+
+.bg-image {
+  background-image: url(https://pbs.twimg.com/media/DFjz0_vVoAMYqxm.jpg);
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
+.bg-fixed {
+  background-attachment: fixed; /* parallax */
+}
+
+.w-40 {
+  width: 40%;
+}
+
+.h-200px {
+  height: 200px;
+}
+
+.bg-red {
+  background-color: red;
+}
+
+.bg-yellow {
+  background-color: yellow;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.bg-lightgreen {
+  background-color: lightgreen;
+}
+
+.d-inline {
+  display: inline;
+}
+
+.float-right {
+  float: right;
+}
+
+.border-violet {
+  border: 1px solid #ccc; /* shorthand */
+}
+
+.mt-50px {
+  margin-top: 50px;
+}
+
+.ml-50px {
+  margin-left: 50px;
+}
+
+.mr-100px {
+  margin-right: 100px;
+}
+
+.mb-200px {
+  margin-bottom: 200px;
+}
+
+#margin-element {
+  margin: 100px 200px;
+}
+
+.w-100px {
+  width: 100px;
+}
+
+.h-100px {
+  height: 100px;
+}
+
+#padding-element {
+  padding: 50px;
+}
+
+.m-10px {
+  margin: 10px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.row-wrap {
+  /* flex-flow: direction wrap */
+  flex-flow: row wrap;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.align-content-center {
+  align-content: center;
+}

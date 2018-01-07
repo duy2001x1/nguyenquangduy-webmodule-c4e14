@@ -1,0 +1,37 @@
+h1 {
+  font-family: 'Joti One', cursive;
+  font-size: 35px;
+  color: rgb(182, 179, 181);
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.bg-black {
+  background-color: black;
+}
+
+.float-right {
+  float: right;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.row-wrap {
+  flex-flow: column wrap;
+}
+
+.mb-100px {
+  margin-bottom: 100px;
+}

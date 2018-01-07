@@ -1,0 +1,27 @@
+.header {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-bar {
+  border: 1px solid #ccc;
+}
+
+ul {
+  list-style: none;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+ul li {
+  display: inline;
+}
+
+ul a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  padding: 0 90px;
+}
